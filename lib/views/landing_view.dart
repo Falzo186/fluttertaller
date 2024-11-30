@@ -38,7 +38,7 @@ class _LandingViewState extends State<LandingView> {
                   height: 60,
                   width: 60,
                   child: IconButton(
-                    icon: Icon(isOpen ? Icons.arrow_back : Icons.menu),
+                    icon: Icon(isOpen ? Icons.arrow_back_ios : Icons.menu_open),
                     color: Colors.red,
                     onPressed: () {
                       setState(() {
@@ -51,20 +51,20 @@ class _LandingViewState extends State<LandingView> {
                 ),
                 const SizedBox(height: 20),
                 _buildMenuItem(
-                  Icons.book,
+                  Icons.folder_open,
                   "Proyectos",
                 ),
                 _buildMenuItem(
-                  Icons.edit_note_rounded,
+                  Icons.note_alt,
                   "Borradores",
                 ),
                 _buildMenuItem(
-                  Icons.switch_access_shortcut_add_rounded,
+                  Icons.group,
                   "Compartido\nconmigo",
                 ),
                 const Spacer(),
                 _buildMenuItem(
-                  Icons.settings,
+                  Icons.settings_applications,
                   "Configuración",
                 ),
               ],
@@ -96,7 +96,7 @@ class _LandingViewState extends State<LandingView> {
                       ),
                       Spacer(),
                       Icon(
-                        Icons.link,
+                        Icons.link_rounded,
                         size: 30,
                         color: Colors.red,
                       ),
@@ -111,7 +111,7 @@ class _LandingViewState extends State<LandingView> {
                       ),
                       SizedBox(width: 20),
                       Icon(
-                        Icons.more_horiz,
+                        Icons.more_vert,
                         size: 30,
                         color: Colors.red,
                       ),
